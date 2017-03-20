@@ -5,12 +5,15 @@ bweb:
 rweb:
 	docker run -d --net hours-net --ip 172.18.0.3 -p 8080:80 example/hours-web
 bdb:
-	cd hours-db; docker build -t example/hours-web .
+	cd hours-db; docker build -t example/hours-db .
 rdb:
 	docker run -d --net hours-net --ip 172.18.0.2 example/hours-db
+ball:	bweb bdb
 rall:	rweb rdb
 all:	net bweb bdb rweb rdb
-clean:
+stop:
+	docker stop $$(docker ps -q)
+clean:	stop
 	docker rm $$(docker ps -a -q); docker rmi $$(docker images | grep "^<none>" | awk "{print $$3}")
-cleanall: clean
+cleanall: stop clean
 	docker network rm hours-net;
