@@ -3,11 +3,11 @@ net:
 bweb:
 	cd hours-web; docker build -t example/hours-web .
 rweb:
-	docker run -d --net hours-net --ip 172.18.0.3 -p 8080:80 example/hours-web
+	docker run -d --net hours-net --ip 172.18.0.3 -p 8080:80 --name web example/hours-web
 bdb:
 	cd hours-db; docker build -t example/hours-db .
 rdb:
-	docker run -d --net hours-net --ip 172.18.0.2 example/hours-db
+	docker run -d --net hours-net --ip 172.18.0.2 --name db example/hours-db
 ball:	bweb bdb
 rall:	rweb rdb
 all:	net bweb bdb rweb rdb
