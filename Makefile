@@ -9,6 +9,7 @@ bdb:
 rdb:
 	docker run -d --net hours-net --ip 172.18.0.2 example/hours-db
 rall:	rweb rdb
+all:	net bweb bdb rweb rdb
 clean:
 	docker rm $$(docker ps -a -q); docker rmi $$(docker images | grep "^<none>" | awk "{print $$3}")
 cleanall: clean
