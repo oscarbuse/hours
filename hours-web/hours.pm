@@ -2,7 +2,7 @@ package hours;
 
 require Exporter;
 @ISA = qw(Exporter);
-@EXPORT = qw(@cols @years @months %month @days %colnames %colvalue %customer_full @customers @status @billed @description &makeselect &editselect &PrintHead &PrintTail &ShowError &ExecSqlQuery &get_year &get_month &get_day &choices);
+@EXPORT = qw(@cols @years @months %month @days %colnames %colvalue @customers @status @billed @description &makeselect &editselect &PrintHead &PrintTail &ShowError &ExecSqlQuery &get_year &get_month &get_day &choices);
 
 @cols = qw(customer year month day begin end hours minutes km kmvoor kmna status billed invoice description work);
 @years = qw(2011 2012 2013 2014 2015 2016 2017);
@@ -263,25 +263,8 @@ sub ExecSqlQuery($$) {
 );
 
 # customers
-@customers = ('Water Insight','AT','AT Consultancy','liqit','isatis','jcr','viafrica','kpn','momac','nasc','iteducation','tetraned','mtv','kwalinux','vu');
-%customer_full = (
-  'Water Insight'	=> 'Water Insight',
-  'AT'			=> 'AT Computing BV',
-  'AT Consultancy'      => 'AT Consultancy BV',
-  'ligit'		=> 'LiQiT',
-  'isatis'		=> 'Isatis',
-  'jcr'			=> 'Julius Clinial Research',
-  'viafrica'    	=> 'Viafrica',
-  'kpn'    		=> 'KPN',
-  'momac'    	        => 'Momac',
-  'nasc'    	        => 'NASC - Netherlands Academy Support Center',
-  'iteducation'		=> 'IT education',
-  'tetraned'		=> 'Tetraned',
-  'mtv'			=> 'MTV Networks',
-  'kwalinux'		=> 'KwaLinux Trainingen',
-  'vu'			=> 'Vrije Universiteit',
-);
-# end customers
+@customers = ('Rolls Royce','Google','FaceBook','Twitter','Booking.com','KwaLinux');
+
 @status = qw(voorbereiding bezig afgerond onbekend);
 @billed = qw(Ja Nee);
 @description = (
