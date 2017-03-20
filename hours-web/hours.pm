@@ -263,36 +263,23 @@ sub ExecSqlQuery($$) {
 );
 
 # customers
-@customers = ('Focus online','Water Insight','AT','AT Consultancy','donux','liqit','osgn','isatis','jcr','jef','viafrica','ViafricaZ','kpn','momac','nasc','NICE', 'huiscoach','dijktraining','iteducation','camarate', 'tetraned', 'vijfhart', 'mtv', 'upact', 'roc', 'kwalinux','vu','vu-somalia');
+@customers = ('Water Insight','AT','AT Consultancy','liqit','isatis','jcr','viafrica','kpn','momac','nasc','iteducation','tetraned','mtv','kwalinux','vu');
 %customer_full = (
-  'Focus online'	=> 'Focus online',
   'Water Insight'	=> 'Water Insight',
   'AT'			=> 'AT Computing BV',
   'AT Consultancy'      => 'AT Consultancy BV',
-  'donux'		=> 'Donux',
   'ligit'		=> 'LiQiT',
-  'osgn'		=> 'Open Source Group Nederland',
   'isatis'		=> 'Isatis',
   'jcr'			=> 'Julius Clinial Research',
-  'jef'			=> 'jefvandenputte architectuur',
   'viafrica'    	=> 'Viafrica',
-  'ViafricaZ'    	=> 'Viafrica zakelijk',
   'kpn'    		=> 'KPN',
   'momac'    	        => 'Momac',
   'nasc'    	        => 'NASC - Netherlands Academy Support Center',
-  'NICE'    	        => 'NICE international',
-  'huiscoach'		=> 'Dijk huiscoach',
-  'dijktraining'	=> 'Dijk training & coaching',
   'iteducation'		=> 'IT education',
-  'camarate'		=> 'camarate ICT',
   'tetraned'		=> 'Tetraned',
-  'vijfhart'		=> 'Vijfhart IT-Opleidingen',
   'mtv'			=> 'MTV Networks',
-  'upact'		=> 'Upact.nl',
-  'roc'			=> 'ROC',
   'kwalinux'		=> 'KwaLinux Trainingen',
   'vu'			=> 'Vrije Universiteit',
-  'vu-somalia'		=> 'Vrije Universiteit Project Somalia',
 );
 # end customers
 @status = qw(voorbereiding bezig afgerond onbekend);
