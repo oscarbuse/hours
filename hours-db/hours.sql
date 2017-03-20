@@ -1,0 +1,21 @@
+CREATE TABLE `hours` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer` char(100) DEFAULT NULL,
+  `year` char(4) NOT NULL,
+  `month` char(2) DEFAULT NULL,
+  `day` char(2) DEFAULT NULL,
+  `begin` char(8) DEFAULT NULL,
+  `end` char(8) DEFAULT NULL,
+  `hours` char(2) DEFAULT NULL,
+  `minutes` char(2) DEFAULT NULL,
+  `km` char(4) DEFAULT NULL,
+  `kmvoor` char(10) DEFAULT NULL,
+  `kmna` char(10) DEFAULT NULL,
+  `status` char(20) NOT NULL,
+  `billed` char(3) NOT NULL,
+  `invoice` char(20) NOT NULL,
+  `description` char(100) NOT NULL,
+  `work` text,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2644 DEFAULT CHARSET=latin1
