@@ -20,7 +20,7 @@ my $CGI = new CGI();
 # send the appropriate MIME-header
 print $CGI->header("text/html");
 
-my $debug = 1;
+my $debug = 0;
 
 # -----------------------------------------------------------------
 # Hoofdprogramma
