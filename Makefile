@@ -13,6 +13,8 @@ rall:	rweb rdb
 all:	net bweb bdb rweb rdb
 stop:
 	docker stop $$(docker ps -q)
+rm:
+	docker rm web db
 clean:
 	docker rm $$(docker ps -a -q); docker rmi $$(docker images | grep "^<none>" | awk "{print $$3}")
 cleanall: clean
