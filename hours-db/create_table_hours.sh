@@ -1,1 +1,1 @@
-/bin/cat hours.sql | /usr/bin/mysql -uroot -pletmein accounting
+/bin/cat hours.sql | /usr/bin/mysql -uroot -pchangeme accounting
