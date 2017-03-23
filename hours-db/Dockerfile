@@ -10,6 +10,5 @@ ENV MYSQL_PASSWORD 'changeme'
 RUN apt-get update
 RUN apt-get -y install vim net-tools
 
-# Application Code
-COPY hours.sql /root
-COPY create_table_hours.sh /root
+# table "hours"
+COPY hours.sql /docker-entrypoint-initdb.d
