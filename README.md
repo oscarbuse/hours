@@ -6,3 +6,4 @@ The containers:
 * docker hours-db: runs mysql and has the database "accounting" with the table "hours".
 
 You need to have docker installed.
+Then "make all" should do the trick. When finished point your browser to <IP>:8080
