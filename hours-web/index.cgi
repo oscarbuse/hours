@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 # -----------------------------------------------------------------
 # index.cgi
-# puts/edits/deletes hours-info in table hours, db accounting accounting
+# puts/edits/deletes hours-info in table hours, db accounting
 # -----------------------------------------------------------------
 # Inititalisatie
 # -----------------------------------------------------------------
