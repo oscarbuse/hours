@@ -85,7 +85,7 @@ EOF
     } elsif  ("$col" eq "minutes") {
       print " $colnames{$col}[0] $colnames{$col}[1] value=x></td></tr>";
     } elsif  ("$col" eq "km") {
-      print "<tr><td>$colnames{$col}[0]</td><td>$colnames{$col}[1]>";
+      print "<tr><td>$colnames{$col}[0]</td><td>$colnames{$col}[1] value=x>";
     } elsif  ("$col" eq "kmvoor") {
       print " $colnames{$col}[0] $colnames{$col}[1]> ";
     } elsif  ("$col" eq "kmna") {

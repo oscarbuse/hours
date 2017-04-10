@@ -1,5 +1,6 @@
 FROM mysql:latest
 MAINTAINER Oscar Buse <oscar@kwalinux.nl>
+#RUN useradd -c 'Oscar' -m -d /home/oscar -s /bin/bash oscar
 USER root
 
 #ENV MYSQL_ROOT_PASSWORD 'changeme'
