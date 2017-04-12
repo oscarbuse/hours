@@ -3,7 +3,7 @@ net:
 bweb:
 	cd hours-web; docker build -t example/hours-web .
 rweb:
-	docker run -d --rm --net hours-net --ip 172.18.0.3 -p 8010:8080 --name web example/hours-web
+	docker run -d --rm --net hours-net --ip 172.18.0.3 -p 8080:8080 --name web example/hours-web
 
 bweb2:
 	cd hours-web; docker build -t example/hours-web2 .
