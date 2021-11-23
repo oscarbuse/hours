@@ -1,4 +1,4 @@
-FROM httpd:latest
+FROM httpd:2.4
 MAINTAINER Oscar Buse <oscar@kwalinux.nl>
 RUN useradd -c 'Oscar' -m -d /home/oscar -s /bin/bash oscar
 
